@@ -151,5 +151,29 @@ h1 span{
 }
 
 // About section
+.contact{
+    background-color: $orange;
+}
 
-
+.contact .wrapper{
+  display: flex;
+  justify-content: center;
+}
+.contact-container{
+    display: flex;
+    justify-content: center;
+    padding: 10rem;
+    margin: 5rem 0;
+}
+.contact .wrapper div{
+    text-align: center;
+    font-size: 4.2rem;
+    color: $white;
+    flex: 1 1 50%;
+}
+.contact-container img{
+    max-width: 8rem;
+}
+.contact-container h3{
+    margin-top: 0;
+}
