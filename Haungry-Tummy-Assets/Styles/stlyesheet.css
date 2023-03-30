@@ -252,6 +252,21 @@ li {
   list-style: none;
 }
 
+button {
+  text-transform: uppercase;
+  border: 4px solid #E75605;
+  padding: 1rem 2rem;
+  background-color: #FFFFFF;
+  color: #1F2022;
+  font-weight: 700;
+  transition: 0.5s;
+}
+button:hover, button:focus {
+  background-color: #E75605;
+  color: #FFFFFF;
+  transition: 0.5s;
+}
+
 .top-nav ul {
   display: flex;
   justify-content: center;
@@ -329,4 +344,39 @@ h1 span {
 
 .card-container img {
   flex: 1 1 50%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
+
+.card-small {
+  background-color: #EEEEEE;
+}
+
+.card-small .wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
+
+.card-small img {
+  -o-object-fit: inherit;
+     object-fit: inherit;
+}
+
+.card-small .text-box {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.card-small .text-box p {
+  margin: 0;
+}
+
+.card-small .text-box h2 {
+  margin: 0 0 1rem 0;
+}
+
+.card-small .text-box button {
+  margin-top: 1rem;
+}/*# sourceMappingURL=stlyesheet.css.map */
