@@ -3,7 +3,7 @@
 Welcome all! The purpose of this repo is to host my first Assignemnt from Juno's webdevelopment bootcamp (winter cohort 49) The purpose of the assignment was to replicate a given page design as close as possible using semantic HTML and CSS / SCSS. this project marks my first time using SCSS.
 
 ## Assets
-- All images for the project were supplied by the college
+- All images for the project were supplied by the college.
 - All icons used in the project were free to use SVG's courtesey of SVGrepo.
 - Fonts used are free to use fonts hosted on Google Fonts.
 
