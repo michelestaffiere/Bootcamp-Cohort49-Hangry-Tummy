@@ -74,11 +74,23 @@ button{
     color: $orange;
     transition: .5s;
 } 
+h1{
+    color: $orange;
+    font-size: 14.5rem;
+    font-weight: 700;
+    flex: 1 1 80%;
+    margin-left: 50rem;
+}
+
 
 //Header
 header{
     height: 70vh;
     display: flex;
+    background-image: url(../Assets/header-burger.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 .header-container{
     display: flex;
@@ -89,15 +101,6 @@ header{
 header .signature-burger{
     width: auto;
     height: 100%;
-}
-h1{
-    color: $orange;
-    font-size: 14.5rem;
-    font-weight: 700;
-    flex: 1 1 80%;
-}
-h1 span{
-    display: block;
 }
  
 // Menu Section
@@ -208,3 +211,58 @@ footer .container{
     margin-right: 0;
     border: none;
 }
+
+//Breaking points
+@media (max-width: 1500px) {
+    h2{
+        font-size: 3.5rem;
+    }
+    .top{
+        display: none;
+    }
+    header{
+        height: 75vh;
+        flex-direction: column;
+        background-position: bottom;
+    }
+    .header-container .social-contact{
+         display: none;
+    }
+    .header-container h1{
+        font-size: 4rem;
+        margin-left: 20rem;
+        margin-top: 10rem;
+    }
+
+    .card-container{
+        flex-direction: column;
+        & .text-box:nth-child(1){
+            order: 2;
+        }
+   }
+   .card-small .wrapper {
+        flex-direction: column;
+        
+        & .text-box{
+            padding: 10%;
+        }
+    }
+    footer .container {
+        flex-direction: column;
+        text-align: center;
+
+        & h2{
+            font-size: 2.5rem;
+        }
+        p,li{
+            font-size: 1.5rem;
+        }
+        ul{
+            padding: 0;
+        }
+    }
+    .nav ul li {
+        margin: 0 1.5rem 0 0;
+    }
+
+  }

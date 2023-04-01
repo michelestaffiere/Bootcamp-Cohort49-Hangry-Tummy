@@ -296,9 +296,21 @@ button:hover, button:focus {
   transition: 0.5s;
 }
 
+h1 {
+  color: #E75605;
+  font-size: 14.5rem;
+  font-weight: 700;
+  flex: 1 1 80%;
+  margin-left: 50rem;
+}
+
 header {
   height: 70vh;
   display: flex;
+  background-image: url(../Assets/header-burger.png);
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .header-container {
@@ -311,17 +323,6 @@ header {
 header .signature-burger {
   width: auto;
   height: 100%;
-}
-
-h1 {
-  color: #E75605;
-  font-size: 14.5rem;
-  font-weight: 700;
-  flex: 1 1 80%;
-}
-
-h1 span {
-  display: block;
 }
 
 .menu {
@@ -447,4 +448,54 @@ footer .container {
   font-size: 4rem;
   margin-right: 0;
   border: none;
+}
+
+@media (max-width: 1500px) {
+  h2 {
+    font-size: 3.5rem;
+  }
+  .top {
+    display: none;
+  }
+  header {
+    height: 75vh;
+    flex-direction: column;
+    background-position: bottom;
+  }
+  .header-container .social-contact {
+    display: none;
+  }
+  .header-container h1 {
+    font-size: 4rem;
+    margin-left: 20rem;
+    margin-top: 10rem;
+  }
+  .card-container {
+    flex-direction: column;
+  }
+  .card-container .text-box:nth-child(1) {
+    order: 2;
+  }
+  .card-small .wrapper {
+    flex-direction: column;
+  }
+  .card-small .wrapper .text-box {
+    padding: 10%;
+  }
+  footer .container {
+    flex-direction: column;
+    text-align: center;
+  }
+  footer .container h2 {
+    font-size: 2.5rem;
+  }
+  footer .container p, footer .container li {
+    font-size: 1.5rem;
+  }
+  footer .container ul {
+    padding: 0;
+  }
+  .nav ul li {
+    margin: 0 1.5rem 0 0;
+  }
 }/*# sourceMappingURL=stlyesheet.css.map */
