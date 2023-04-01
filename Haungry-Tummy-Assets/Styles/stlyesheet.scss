@@ -49,25 +49,23 @@ button{
         transition: .5s;
     }
 }
-// Top Navigation 
-.top-nav ul{
+.nav ul{
     display: flex;
     justify-content: center;
     margin: 2rem 0 0 0;
 }
-.top-nav ul li{
+.nav ul li{
     margin: 0 4.5rem 0 0;
 }
-.top-nav a{
+.nav a{
     color: $darkgray;
     transition: 0.5s;
     text-decoration: none;
 }
-.top-nav a:hover,.top-nav a:focus{
+.nav a:hover,.nav a:focus{
     color: $orange;
     transition: .5s;
-}
-
+} 
 
 //Header
 header{
@@ -179,8 +177,11 @@ h1 span{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 8rem;
  }
-
+.gallery h2{
+    margin-top: 0;
+}
  .gallery ul {
     display: flex;
     gap: 2%;
@@ -188,4 +189,18 @@ h1 span{
  .gallery ul img{
     height: auto;
     width: 100%; 
+}
+
+
+//footer
+
+footer{
+    padding-top: 3rem;
+    background-color: $lightgray;
+    display: flex;
+    flex-direction: column;
+}
+footer .container{
+    display: flex;
+
 }
