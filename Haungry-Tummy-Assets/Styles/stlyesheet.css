@@ -444,10 +444,21 @@ footer .container {
   justify-content: space-between;
 }
 
+.contact-information ul {
+  padding: 0;
+}
+
+.form-container {
+  display: flex;
+}
+
 .email-form {
-  font-size: 4rem;
-  margin-right: 0;
+  font-size: 1.6rem;
+  margin: 0;
+  padding: 10px;
   border: none;
+  box-shadow: 0 0 15px 10px rgba(0, 0, 0, 0.06);
+  width: 60%;
 }
 
 @media (max-width: 1500px) {
@@ -481,6 +492,14 @@ footer .container {
   }
   .card-small .wrapper .text-box {
     padding: 10%;
+  }
+  .contact-container {
+    flex-direction: column;
+    padding: 0;
+  }
+  .gallery ul {
+    flex-direction: column;
+    padding: 0;
   }
   footer .container {
     flex-direction: column;

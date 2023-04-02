@@ -206,10 +206,23 @@ footer .container{
     display: flex;
     justify-content: space-between;
 }
+.contact-information{
+    & ul{
+        padding: 0;
+    }
+}
+    
+.form-container{
+    display: flex;
+}
 .email-form{
-    font-size: 4rem;
-    margin-right: 0;
+    font-size: 1.6rem;
+    margin: 0;
+    padding: 10px;
     border: none;
+    box-shadow:0 0 15px 10px rgba(0,0,0,0.06); // Makes the input area more cleary defined. 
+    width: 60%;
+
 }
 
 //Breaking points
@@ -247,6 +260,18 @@ footer .container{
             padding: 10%;
         }
     }
+
+
+    .contact-container{
+        flex-direction: column;
+        padding: 0;
+    }
+    .gallery ul{
+        flex-direction: column;
+        padding: 0;
+    }
+
+
     footer .container {
         flex-direction: column;
         text-align: center;
