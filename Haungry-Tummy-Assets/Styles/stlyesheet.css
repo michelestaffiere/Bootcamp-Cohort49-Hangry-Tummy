@@ -448,38 +448,19 @@ footer .container {
   padding: 0;
 }
 
-.form-container {
-  display: flex;
-}
-
 .email-form {
   font-size: 1.6rem;
   margin: 0;
   padding: 10px;
   border: none;
   box-shadow: 0 0 15px 10px rgba(0, 0, 0, 0.06);
-  width: 60%;
+  width: 50%;
 }
 
-@media (max-width: 1500px) {
-  h2 {
-    font-size: 3.5rem;
-  }
-  .top {
-    display: none;
-  }
+@media (max-width: 1605px) {
   header {
     height: 75vh;
     flex-direction: column;
-    background-position: bottom;
-  }
-  .header-container .social-contact {
-    display: none;
-  }
-  .header-container h1 {
-    font-size: 4rem;
-    margin-left: 20rem;
-    margin-top: 10rem;
   }
   .card-container {
     flex-direction: column;
@@ -516,5 +497,24 @@ footer .container {
   }
   .nav ul li {
     margin: 0 1.5rem 0 0;
+  }
+}
+@media (max-width: 500px) {
+  header {
+    background-position: bottom;
+  }
+  h2 {
+    font-size: 3.5rem;
+  }
+  .top {
+    display: none;
+  }
+  .header-container .social-contact {
+    display: none;
+  }
+  .header-container h1 {
+    font-size: 4rem;
+    margin-left: 20rem;
+    margin-top: 10rem;
   }
 }/*# sourceMappingURL=stlyesheet.css.map */
