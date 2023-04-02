@@ -33,7 +33,6 @@ li{
 }
 //Reusables 
 .social-contact{
-    flex: 1 1 auto;
     margin: 0 0 5% 0;
     line-height: 1.5;
 }
@@ -84,6 +83,9 @@ h1{
 
 
 //Header
+.burger-menu{
+    display: none;
+}
 header{
     height: 70vh;
     display: flex;
@@ -202,11 +204,17 @@ footer{
     display: flex;
     flex-direction: column;
 }
-footer .container{
+footer
+.container{
     display: flex;
     justify-content: space-between;
 }
+footer .social-contact{
+    margin: 0;
+}
 .contact-information{
+    width:fit-content;
+    margin: 0;
     & ul{
         padding: 0;
     }
@@ -217,9 +225,12 @@ footer .container{
     padding: 10px;
     border: none;
     box-shadow:0 0 15px 10px rgba(0,0,0,0.06); // Makes the input area more cleary defined. 
-    width: 50%;
+    width: 60%;
+    height: 5rem;
     }
-
+.form-container{
+    font-size: 0;
+}
 
 
 //Breaking points
@@ -284,5 +295,13 @@ footer .container{
         font-size: 4rem;
         margin-left: 20rem;
         margin-top: 10rem;
+    }
+    .burger-menu{
+        display: inline;
+        position: absolute;
+        width: auto;
+        height: 7%;
+        top: 2%;
+        left: 84%;
     }
 }
