@@ -251,7 +251,6 @@ li {
   margin: 0 0 5% 0;
   line-height: 1.5;
 }
-
 .social-contact img {
   width: auto;
   height: 3.5rem;
@@ -279,18 +278,15 @@ button:hover, button:focus {
   justify-content: center;
   margin: 2rem 0 0 0;
 }
-
 .nav ul li {
   margin: 0 4.5rem 0 0;
 }
-
 .nav a {
   color: #1F2022;
   transition: 0.5s;
   text-decoration: none;
 }
-
-.nav a:hover, .nav a:focus {
+.nav a:focus, .nav a:hover {
   color: #E75605;
   transition: 0.5s;
 }
@@ -315,17 +311,11 @@ header {
   background-repeat: no-repeat;
   background-size: contain;
 }
-
-.header-container {
+header .header-container {
   display: flex;
   width: 100%;
   justify-content: center;
   align-items: center;
-}
-
-header .signature-burger {
-  width: auto;
-  height: 100%;
 }
 
 .menu {
@@ -336,6 +326,11 @@ header .signature-burger {
 .card-container {
   display: flex;
 }
+.card-container img {
+  flex: 1 1 50%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
 
 .text-box {
   padding: 8%;
@@ -343,41 +338,29 @@ header .signature-burger {
   height: auto;
 }
 
-.card-container img {
-  flex: 1 1 50%;
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-
 .card-small {
   background-color: #EEEEEE;
 }
-
 .card-small .wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 4rem;
 }
-
 .card-small img {
   -o-object-fit: inherit;
      object-fit: inherit;
 }
-
 .card-small .text-box {
   padding-left: 0;
   padding-right: 0;
 }
-
 .card-small .text-box p {
   margin: 0;
 }
-
 .card-small .text-box h2 {
   margin: 0 0 1rem 0;
 }
-
 .card-small .text-box button {
   margin-top: 1rem;
 }
@@ -385,31 +368,26 @@ header .signature-burger {
 .contact {
   background-color: #E75605;
 }
-
 .contact .wrapper {
   display: flex;
   justify-content: center;
 }
-
-.contact-container {
-  display: flex;
-  justify-content: center;
-  padding: 10rem;
-  margin: 5rem 0;
-}
-
 .contact .wrapper div {
   text-align: center;
   font-size: 4.2rem;
   color: #FFFFFF;
   flex: 1 1 50%;
 }
-
-.contact-container img {
+.contact .wrapper .contact-container {
+  display: flex;
+  justify-content: center;
+  padding: 10rem;
+  margin: 5rem 0;
+}
+.contact .wrapper .contact-container img {
   max-width: 8rem;
 }
-
-.contact-container h3 {
+.contact .wrapper .contact-container h3 {
   margin-top: 0;
 }
 
@@ -420,16 +398,13 @@ header .signature-burger {
   align-items: center;
   margin: 8rem;
 }
-
 .gallery h2 {
   margin-top: 0;
 }
-
 .gallery ul {
   display: flex;
   gap: 2%;
 }
-
 .gallery ul img {
   height: auto;
   width: 100%;
@@ -441,22 +416,19 @@ footer {
   display: flex;
   flex-direction: column;
 }
-
+footer .social-contact {
+  margin: 0;
+}
 footer .container {
   display: flex;
   justify-content: space-between;
 }
-
-footer .social-contact {
-  margin: 0;
-}
-
-.contact-information {
+footer .container .contact-information {
   width: -moz-fit-content;
   width: fit-content;
   margin: 0;
 }
-.contact-information ul {
+footer .container .contact-information ul {
   padding: 0;
 }
 
@@ -469,8 +441,7 @@ footer .social-contact {
   width: 60%;
   height: 5rem;
 }
-
-.form-container {
+.email-form .form-container {
   font-size: 0;
 }
 
