@@ -33,12 +33,12 @@ li{
 }
 //Reusables 
 .social-contact{
-    margin: 0 0 5% 0;
+    margin: 0 0 5% 15%;
     line-height: 1.5;
     & img{
-            width: auto;
-    height: 3.5rem;
-    margin-bottom: 1.5rem;
+        width: auto;
+        height: 3.5rem;
+        margin-bottom: 1.5rem;
     }
 }
 button{
@@ -58,12 +58,12 @@ button{
 }
 .nav {
     & ul{
-         display: flex;
-    justify-content: center;
-    margin: 2rem 0 0 0;
+        display: flex;
+        justify-content: center;
+        margin: 2rem 0 0 0;
         & li{
-        margin: 0 4.5rem 0 0;
-         }
+            margin: 0 4.5rem 0 0;
+        }
     }
     a{
         color: $darkgray;
@@ -74,7 +74,6 @@ button{
         color: $orange;
         transition: .5s;
     } 
-
 }
 h1{
     color: $orange;
@@ -224,10 +223,10 @@ footer{
     box-shadow:0 0 15px 10px rgba(0,0,0,0.06); // Makes the input area more cleary defined. 
     width: 60%;
     height: 5rem;
-    & .form-container{
-        font-size: 0;
-    }
-    }
+}
+.form-container{
+    font-size: 0;
+}
 
 //Breaking points
 @media (max-width: 1605px) {
